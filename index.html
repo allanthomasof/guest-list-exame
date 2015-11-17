@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Guest List</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" />
+<link rel="stylesheet" href="assets/css/pure-min.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+<body>
+
+<header>
+	<h1>Guest List</h1>
+</header>
+
+<form class="pure-form pure-form-aligned">
+	<fieldset>
+		<div class="pure-control-group">
+			<label for="name">Name</label>
+			<input id="name" type="text" placeholder="Username" required>
+		</div>
+
+		<div class="pure-control-group">
+			<label for="email">Email Address</label>
+			<input id="email" type="email" placeholder="Email Address" required>
+		</div>
+		
+		<div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">Submit</button>
+		</div>
+	</fieldset>
+</form>
+
+<section id="guestList">
+</section>
+
+<script src="assets/js/libs/jquery.min.js"></script>
+<script src="assets/js/libs/md5.min.js"></script>
+<script src="assets/js/GuestService.js"></script>
+<script src="assets/js/GuestController.js"></script>
+
+</body>
+</html>

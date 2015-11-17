@@ -1,0 +1,45 @@
+HTTP GET /api/guests
+RESPONSE 200 OK 
+[
+  {
+    "id": "1",
+    "name": "Lidy Segura",
+    "email": "lidyber@gmail.com"
+  },
+  {
+    "id": "2",
+    "name": "Edy Segura",
+    "email": "edysegura@gmail.com"
+  }
+]
+
+
+HTTP POST /api/guests
+REQUEST Body 
+{
+	"name": "Lidy Segura",
+	"email": "lidyber@gmail.com"
+}
+
+RESPONSE 200 OK 
+{
+  "name": "This is a test",
+  "email": "test@gmail.com",
+  "id": "1"
+}
+
+
+
+HTTP DELETE /api/guests/:id
+RESPONSE 200 OK 
+{
+  "status": "true",
+  "message": "Guest deleted!"
+}
+
+HTTP DELETE /api/guests/x
+RESPONSE 404 NOT FOUND 
+{
+  "status": "false",
+  "message": "Guest with x does not exit"
+}
